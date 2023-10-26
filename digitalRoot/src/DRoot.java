@@ -2,15 +2,10 @@ public class DRoot {
 
     public static int digital_root(int numberInt) {
 
-        int dig = calculateDigitsSum(numberInt);
-        String digString = Integer.toString(dig);
-
-        while (digString.length() > 1) {
-            dig = calculateDigitsSum(dig);
-            digString = Integer.toString(dig);
+        while (numberInt >= 10) {
+            numberInt = calculateDigitsSum(numberInt);
         }
-
-        return dig;
+        return numberInt;
     }
 
     public static int calculateDigitsSum(int num){

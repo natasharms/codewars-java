@@ -3,7 +3,7 @@ public class Main {
 
         DRoot dRoot = new DRoot();
 
-        System.out.println("Digital root: " + dRoot.digital_root(16));
+        System.out.println("Digital root: " + dRoot.digital_root(456));
 
 
     }
